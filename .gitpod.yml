@@ -1,0 +1,17 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: echo 'makes hardhat easier =]' # runs during prebuild
+    command: |
+      alias h="npx hardhat"; export h
+      yarn install
+
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+# ports:
+#   - port: 3000
+#     onOpen: open-preview
+
+vscode:
+  extensions:
+    - JuanBlanco.solidity
+    - dbaeumer.vscode-eslint
